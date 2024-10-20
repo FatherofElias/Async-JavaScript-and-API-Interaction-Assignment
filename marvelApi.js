@@ -1,7 +1,8 @@
+// Assignment 1 Task 1
 const publicKey = '41b840dae9a9fb35db11140418553aac';
 const privateKey = 'c36afbddff0194db0350efdd584e19ee7778b5b8'
 const apiUrl = 'https://gateway.marvel.com/v1/public/characters';
-
+// Task 2
 async function fetchCharacters() {
     const ts = new Date().getTime();
     const hash = md5(ts + privateKey + publicKey); 
@@ -15,7 +16,7 @@ async function fetchCharacters() {
         console.error('Error fetching characters:', error);
     }
 }
-
+// Task 3
 function updateUI(characters) {
     const characterContainer = document.getElementById('characters');
     characterContainer.innerHTML = ''; 
