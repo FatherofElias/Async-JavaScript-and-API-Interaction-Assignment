@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        #timer-display {
+            font-size: 2em;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <form id="timer-form">
+        <label for="duration">Enter duration (seconds):</label>
+        <input type="number" id="duration" name="duration" required>
+        <button type="submit">Start Timer</button>
+    </form>
+    <div id="timer-display"></div>
+
+    <script src="countdownTimer.js"></script>
+</body>
+</html>
